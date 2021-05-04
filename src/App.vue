@@ -3,7 +3,10 @@
     <!-- HEADER -->
     <Header/>
     <!-- MAIN -->
-    <main></main>
+    <main>
+      <Content/>
+      <Banner/>
+    </main>
 
     <!-- FOOTER -->
     <footer></footer>
@@ -12,11 +15,15 @@
 
 <script>
 import Header from "@/components/Header.vue";
+import Content from "@/components/Content.vue";
+import Banner from "@/components/Banner.vue";
 
 export default {
   name: 'App',
   components: {
     Header,
+    Content,
+    Banner,
   }
 }
 </script>
