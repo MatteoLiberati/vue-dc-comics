@@ -155,7 +155,7 @@ export default {
 footer{
     /* background-image: url("C:/Users/Teo e Robi/Documents/Boolean Careers/lezione58 - nodejs, vue CLI, prompt comandi/vue-dc-comics/src/assets/images/footer-bg.jpg"); */
     background-image: url("../assets/images/footer-bg.jpg");
-    max-height: 40vh;
+    max-height: 50vh;
     overflow: hidden;
 }
 
@@ -174,6 +174,11 @@ footer{
     font-size: .8rem;
     color: grey;
     text-decoration: none;
+    transition: color .3s;
+}
+
+.link-footer a:hover{
+    color:#fff;
 }
 
 .link-footer h3{

@@ -10,6 +10,7 @@
 
     <!-- FOOTER -->
     <Footer/>
+    <Bottomfixed/>
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import Header from "@/components/Header.vue";
 import Content from "@/components/Content.vue";
 import Banner from "@/components/Banner.vue";
 import Footer from "@/components/Footer.vue";
+import Bottomfixed from "@/components/Bottomfixed.vue";
 
 export default {
   name: 'App',
@@ -26,6 +28,7 @@ export default {
     Content,
     Banner,
     Footer,
+    Bottomfixed,
   }
 }
 </script>
