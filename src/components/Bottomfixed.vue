@@ -8,7 +8,7 @@
               <div>
                   <span>FOLLOW US</span>
                   <a v-for="(element,index) in social" :key="element.name + index" :href="element.link">
-                      <img :src="'/images/'+element.img" :alt="element.name">
+                      <img :src="element.img" :alt="element.name">
                   </a>
               </div>
           </div>
@@ -23,29 +23,29 @@ export default {
     data(){
         return{
             social: [
-                {
+                {   
                     name: "Facebook",
-                    img: "footer-facebook.png",
+                    img: require("../assets/images/footer-facebook.png"),
                     link: "/facebook"
                 },
                 {
                     name: "Twitter",
-                    img: "footer-twitter.png",
+                    img: require("../assets/images/footer-twitter.png"),
                     link: "/twitter"
                 },
                 {
                     name: "Youtube",
-                    img: "footer-youtube.png",
+                    img: require("../assets/images/footer-youtube.png"),
                     link: "/youtube"
                 },
                 {
                     name: "Pinterest",
-                    img: "footer-pinterest.png",
+                    img: require("../assets/images/footer-pinterest.png"),
                     link: "/pinterest"
                 },
                 {
                     name: "Periscope",
-                    img: "footer-periscope.png",
+                    img: require("../assets/images/footer-periscope.png"),
                     link: "/periscope"
                 },
                 

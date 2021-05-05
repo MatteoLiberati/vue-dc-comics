@@ -4,12 +4,14 @@
           <div class="link-footer">
               <!-- COL SX -->
               <section class="col-xs">
+                  <!-- LIST TOP SX -->
                   <h3>dc comics</h3>
                   <ul>
                         <li v-for="(element,index) in dcComics" :key="element.name+index">
                              <a :href="element.link">{{element.name}}</a>
                         </li>
                   </ul>
+                  <!-- LIST BOTTOM SX -->
                   <h3>shops</h3>
                   <ul>
                         <li v-for="(element,index) in shops" :key="element.name+index">
@@ -19,6 +21,7 @@
               </section>
               <!-- COL CENTRE -->
               <section class="col-c">
+                  <!-- LIST CENTRE -->
                   <h3>dc</h3>
                   <ul>
                         <li v-for="(element,index) in dc" :key="element.name+index">
@@ -28,6 +31,7 @@
               </section>
               <!-- COL DX -->
               <section class="col-dx">
+                  <!-- LIST DX -->
                   <h3>sites</h3>
                   <ul>
                         <li v-for="(element,index) in sites" :key="element.name+index">
@@ -36,6 +40,7 @@
                   </ul>
               </section>
           </div>
+          <!-- DIV TOTAL DX LOGO -->
           <div class="logo-footer">
               <img src="@/assets/images/dc-logo-bg.png" alt="logo footer">
           </div>
@@ -152,11 +157,16 @@ export default {
 </script>
 
 <style scoped>
+/* FOOTER */
 footer{
-    /* background-image: url("C:/Users/Teo e Robi/Documents/Boolean Careers/lezione58 - nodejs, vue CLI, prompt comandi/vue-dc-comics/src/assets/images/footer-bg.jpg"); */
     background-image: url("../assets/images/footer-bg.jpg");
     max-height: 50vh;
     overflow: hidden;
+}
+
+.container{
+    display: flex;
+    justify-content:space-between;
 }
 
 .link-footer{
@@ -186,17 +196,13 @@ footer{
     text-transform: uppercase;
     margin-bottom: 10px;
 }
-
-.logo-footer{
-    transform:translateY(-60px)
-}
-
-.container{
-    display: flex;
-    justify-content:space-between;
-}
-
+/* LIST BOTTOM SX */
 .col-xs h3:not(:first-child){
     margin-top: 20px;
+}
+
+/* DIV TOTAL DX LOGO */
+.logo-footer{
+    transform:translateY(-60px)
 }
 </style>

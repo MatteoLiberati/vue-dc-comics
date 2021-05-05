@@ -1,9 +1,12 @@
 <template>
     <header>
+        <!-- CONTAINER -->
         <div class="container">
+            <!-- LOGO -->
             <div class="logo">
                 <img src="@/assets/images/dc-logo.png" alt="logo">
             </div>
+            <!-- NAV BAR -->
             <nav>
                 <ul>
                     <li v-for="(element,index) in menu" :key="index">
@@ -72,6 +75,12 @@ header{
     background-color: #fff;
 }
 
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* LOGO */
 header .logo{
     display:flex;
     align-items: center;
@@ -81,11 +90,7 @@ header .logo img{
     width: 80px;
 }
 
-header .container{
-    display: flex;
-    justify-content: space-between;
-}
-
+/* NAVBAR */
 ul{ 
     display: flex;
     list-style: none;

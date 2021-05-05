@@ -1,9 +1,11 @@
 <template>
   <section>
+      <!-- CONTAINER -->
       <div class="container">
+          <!-- CARDS -->
           <div v-for="(element,index) in store" :key="element.name + index">
-              <a href="">
-                  <img :src="'/images/'+element.img" :alt="element.name">
+              <a href="#">
+                  <img :src="element.img" :alt="element.name">
                   <span>{{element.name}}</span>
               </a>
           </div>
@@ -19,23 +21,23 @@ export default {
             store: [
                 {
                     name: "digital comics",
-                    img: "buy-comics-digital-comics.png",
+                    img: require("../assets/images/buy-comics-digital-comics.png"),
                 },
                 {
                     name: "cd merchandise",
-                    img: "buy-comics-merchandise.png",
+                    img: require("../assets/images/buy-comics-merchandise.png"),
                 },
                 {
                     name: "subscription",
-                    img: "buy-comics-subscriptions.png",
+                    img: require("../assets/images/buy-comics-subscriptions.png"),
                 },
                 {
                     name: "comic shop locator",
-                    img: "buy-comics-shop-locator.png",
+                    img: require("../assets/images/buy-comics-shop-locator.png"),
                 },
                 {
                     name: "dc power visa",
-                    img: "buy-dc-power-visa.svg",
+                    img: require("../assets/images/buy-dc-power-visa.svg"),
                 },
             ]
         }
@@ -44,16 +46,19 @@ export default {
 </script>
 
 <style scoped>
+/* SECTION */
 section{
     background-color:#0c7cec;
 }
 
+/* CONTAINER */
 section .container{
     display: flex;
     justify-content:space-between;
     align-items: center;
 }
 
+/* CARDS */
 .container div a{
     display:flex;
     align-items: center;

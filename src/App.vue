@@ -34,6 +34,7 @@ export default {
 </script>
 
 <style lang="scss">
+// GENERAL
 *{
   margin: 0;
   padding: 0;

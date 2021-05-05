@@ -1,6 +1,8 @@
 <template>
   <section>
+      <!-- CONTAINER -->
       <div class="container">
+          <!-- CONTENT SPACE -->
           <span> Content goes here </span>
       </div>
   </section>
@@ -13,7 +15,7 @@ export default {
 </script>
 
 <style scoped>
-
+/* CONTENT SPACE */
 .container span{
     display: block;
     font-size: 1.6rem;
