@@ -68,5 +68,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "../styles/mixins.scss";
 @import "../styles/footerstyle.scss"
 </style>

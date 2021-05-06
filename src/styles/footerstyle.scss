@@ -5,12 +5,10 @@ footer{
     overflow: hidden;
 
     .container{
-        display: flex;
-        justify-content:space-between;
+        @include center("spacebetween");
 
         .link-footer{
-            display: flex;
-            justify-content: space-between;
+            @include center("spacebetween");
             padding: 20px;
             width: 35%;
 

@@ -3,14 +3,12 @@ header{
     background-color: #fff;
 
     .container{
-        display: flex;
-        justify-content: space-between;
+        @include center("spacebetween")
     }
 
     /* LOGO */
     .logo{
-        display:flex;
-        align-items: center;
+        @include center("vertical");
 
         img{
             width: 80px;

@@ -1,18 +1,15 @@
 // BANNER STYLE 
 /* SECTION */
 section{
-    background-color:#0c7cec;
+    background-color: $brandColor;
 
     /* CONTAINER */
     .container{
-        display: flex;
-        justify-content:space-between;
-        align-items: center;
+        @include center();
         div{
             a{
                 /* CARDS */
-                display:flex;
-                align-items: center;
+                @include center("vertical");
                 padding: 70px 15px;
                 text-decoration: none;
                 transition: transform .3s;
