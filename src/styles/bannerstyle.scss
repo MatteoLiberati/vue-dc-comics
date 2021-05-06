@@ -1,0 +1,38 @@
+// BANNER STYLE 
+/* SECTION */
+section{
+    background-color:#0c7cec;
+
+    /* CONTAINER */
+    .container{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        div{
+            a{
+                /* CARDS */
+                display:flex;
+                align-items: center;
+                padding: 70px 15px;
+                text-decoration: none;
+                transition: transform .3s;
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+            img{
+                height: 60px;
+                margin-right: 10px;
+            }
+            &:last-child img{
+                height: auto;
+                width: 60px;
+            }
+            span{
+            font-size: 1rem;
+            text-transform: uppercase;
+            color: #fff;
+            }
+        }
+    }
+}

@@ -18,99 +18,20 @@
 </template>
 
 <script>
+import social from "@/data/social.js";
+
 export default {
     name: "Bottomfixed",
     data(){
         return{
-            social: [
-                {   
-                    name: "Facebook",
-                    img: require("../assets/images/footer-facebook.png"),
-                    link: "/facebook"
-                },
-                {
-                    name: "Twitter",
-                    img: require("../assets/images/footer-twitter.png"),
-                    link: "/twitter"
-                },
-                {
-                    name: "Youtube",
-                    img: require("../assets/images/footer-youtube.png"),
-                    link: "/youtube"
-                },
-                {
-                    name: "Pinterest",
-                    img: require("../assets/images/footer-pinterest.png"),
-                    link: "/pinterest"
-                },
-                {
-                    name: "Periscope",
-                    img: require("../assets/images/footer-periscope.png"),
-                    link: "/periscope"
-                },
-                
-            ]
+            social,
         }
     }
 }
 </script>
 
-<style scoped>
-.div {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
-/* FIXED TOP */
-.fixed-top{
-    background-color: #303030;
-}
+<style scoped lang="scss">
+@import "../styles/vars.scss";
+@import "../styles/fixedstyle.scss";
 
-.fixed-top .container{
-    display: flex;
-    justify-content: space-between;
-}
-
-.fixed-top .container button{
-    border: 2px solid #0c7cec;
-    text-transform: uppercase;
-    color: #fff;
-    padding: 14px 10px;
-    font-size: 1.06rem;
-    background-color: transparent;
-    cursor: pointer;
-    transition: transform .3s;
-}
-
-.fixed-top .container button:hover{
-    transform: scale(1.1);
-}
-
-.fixed-top .container > div{
-    display:flex;
-    align-items: center;
-    
-}
-
-.fixed-top .container > div span{
-    color: #0c7cec;
-    font-size: 1.3rem;
-    font-weight: bold;
-}
-
-.fixed-top .container > div img{
-    margin-left: 20px;
-    padding: 40px 0;
-    transition: transform .5s
-}
-
-.fixed-top .container > div img:hover{
-    transform: rotate(360deg);
-}
-
-.fixed-bottom{
-    height: 60px;
-    background-color: black;
-}
 </style>

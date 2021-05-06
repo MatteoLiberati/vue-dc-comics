@@ -1,0 +1,49 @@
+/* FOOTER */
+footer{
+    background-image: url("../assets/images/footer-bg.jpg");
+    max-height: 50vh;
+    overflow: hidden;
+
+    .container{
+        display: flex;
+        justify-content:space-between;
+
+        .link-footer{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            width: 35%;
+
+            ul{
+            list-style: none;
+            }
+
+            a{
+            font-size: .8rem;
+            color: grey;
+            text-decoration: none;
+            transition: color .3s;
+            &:hover{
+                color:#fff;
+                }
+            }
+
+            h3{
+            color: #fff;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            }
+
+            /* LIST BOTTOM SX */
+            .col-xs {
+                h3:not(:first-child){
+                margin-top: 20px;
+                }
+            }
+        }
+        /* DIV TOTAL DX LOGO */
+        .logo-footer{
+            transform:translateY(-60px)
+        }
+    }
+}

@@ -49,160 +49,24 @@
 </template>
 
 <script>
+import dcComics from "@/data/dcComics.js";
+import shops from "@/data/shops.js";
+import dc from "@/data/dcMenu.js";
+import sites from "@/data/sitesMenu.js";
+
 export default {
     name: "Footer",
     data(){
         return{
-            dcComics: [
-                {
-                    name: "Characthers",
-                    link: "/characthers",
-                },
-                {
-                    name: "Comics",
-                    link: "/comics",
-                },
-                {
-                    name: "Movies",
-                    link: "/movies",
-                },
-                {
-                    name:"TV",
-                    link:"/tv",
-                },
-                {
-                    name: "Games",
-                    link: "/games",
-                },
-                {
-                    name: "Videos",
-                    link: "/videos",
-                },
-                {   name:"News",
-                    link:"/news",
-                },
-            ],
-            shops: [
-                { 
-                    name:"Shop DC",
-                    link:"/shopdc",
-                },
-                {
-                    name:"Shop DC Collectibles",
-                    link: "/shopdccollectibles",
-                },
-            ],
-            dc: [
-                {
-                    name: "Terms Of Use",
-                    link: "/termsofuse",
-                },
-                {
-                    name: "Ad Choices",
-                    link: "/adchoices",
-                },
-                {
-                    name: "Advertising",
-                    link: "/advertising",
-                },
-                {
-                    name: "Jobs",
-                    link: "/jobs",
-                },
-                {
-                    name: "Subscriptions",
-                    link: "/subscriptions",
-                },
-                {
-                    name: "Talent Workshops",
-                    link: "/talentworkshops",
-                },
-                {
-                    name: "CPSC Certificates",
-                    link: "/cpsccertificates",
-                },   
-                {   name:"Ratings",
-                    link:"/ratings",
-                },
-                {
-                    name:"Shop Help",
-                    link: "/shophelp",
-                },
-                {
-                    name: "Contact Us",
-                    link: "contactus",
-                },
-            ],
-            sites: [
-                {
-                    name: "DC",
-                    link: "/dc",
-                },
-                {   name: "MAD Magazine",
-                    link: "/madmagazine",
-                },
-                {   name: "DC Kids",
-                    link: "/dckids",
-                },
-                {   name: "DC Universe",
-                    link: "/dcuniverse",
-                },
-                {   name: "DC Power VIsa",
-                    link: "/dcpowervisa",
-                },
-            ],
+            dcComics,
+            shops,
+            dc,
+            sites,
         }
     }
 }
 </script>
 
-<style scoped>
-/* FOOTER */
-footer{
-    background-image: url("../assets/images/footer-bg.jpg");
-    max-height: 50vh;
-    overflow: hidden;
-}
-
-.container{
-    display: flex;
-    justify-content:space-between;
-}
-
-.link-footer{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    width: 35%;
-}
-
-.link-footer ul{
-    list-style: none;
-}
-
-.link-footer a{
-    font-size: .8rem;
-    color: grey;
-    text-decoration: none;
-    transition: color .3s;
-}
-
-.link-footer a:hover{
-    color:#fff;
-}
-
-.link-footer h3{
-    color: #fff;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-/* LIST BOTTOM SX */
-.col-xs h3:not(:first-child){
-    margin-top: 20px;
-}
-
-/* DIV TOTAL DX LOGO */
-.logo-footer{
-    transform:translateY(-60px)
-}
+<style scoped lang="scss">
+@import "../styles/footerstyle.scss"
 </style>
