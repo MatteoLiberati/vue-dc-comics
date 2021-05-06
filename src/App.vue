@@ -1,16 +1,16 @@
 <template>
   <div id="app">
     <!-- HEADER -->
-    <Header/>
+    <Header />
     <!-- MAIN -->
     <main>
-      <Content/>
-      <Banner/>
+      <Content />
+      <Banner />
     </main>
 
     <!-- FOOTER -->
-    <Footer/>
-    <Bottomfixed/>
+    <Footer />
+    <Bottomfixed />
   </div>
 </template>
 
@@ -22,15 +22,15 @@ import Footer from "@/components/Footer.vue";
 import Bottomfixed from "@/components/Bottomfixed.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Header,
     Content,
     Banner,
     Footer,
     Bottomfixed,
-  }
-}
+  },
+};
 </script>
 
 <style lang="scss">
@@ -38,5 +38,4 @@ export default {
 @import "./styles/generalstyle.scss";
 // UTILITIES
 @import "./styles/utilities.scss";
-
 </style>
