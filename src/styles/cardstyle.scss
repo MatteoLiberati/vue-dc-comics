@@ -1,0 +1,17 @@
+// CARD STYLE
+.card{
+    width: calc(100% / 6 - 20px);
+    margin: 20px 10px;
+    div{
+        text-align: center;
+        height: 200px;
+        object-fit: cover;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+    span{
+        display:block;
+        color: #fff;
+        text-transform: uppercase;
+    }
+}

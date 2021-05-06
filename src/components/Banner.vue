@@ -82,6 +82,7 @@ section .container{
 }
 
 .container div span{
+    font-size: 1rem;
     text-transform: uppercase;
     color: #fff;
 }

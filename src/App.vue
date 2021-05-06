@@ -34,21 +34,9 @@ export default {
 </script>
 
 <style lang="scss">
-// GENERAL
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+// GENERAL STYLE
+@import "./styles/generalstyle.scss";
+// UTILITIES
+@import "./styles/utilities.scss";
 
-#app{
-  background-color:black;
-  padding: 30px 0;
-  font-family: 'Roboto', sans-serif;
-}
-
-.container{
-  max-width: 1270px;
-  margin: 0 auto;
-}
 </style>
