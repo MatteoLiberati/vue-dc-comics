@@ -31,7 +31,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "../styles/mixins.scss";
-@import "../styles/vars.scss";
 @import "../styles/headerstyle.scss";
 </style>

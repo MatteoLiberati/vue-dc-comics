@@ -38,7 +38,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import "@/styles/vars.scss";
 @import "../styles/content.scss";
-
 </style>
